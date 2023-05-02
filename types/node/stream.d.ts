@@ -420,6 +420,15 @@ declare module 'stream' {
              */
             wrap(stream: NodeJS.ReadableStream): this;
             push(chunk: any, encoding?: BufferEncoding): boolean;
+            /**
+             * Stability: 1 - Experimental
+             * This method allows easily obtaining the contents of a stream.
+             * As this method reads the entire stream into memory, it negates the benefits of streams.
+             * It's intended for interoperability and convenience, not as the primary way to consume streams.
+             * @since v17.5.0, v16.15.0
+             * @experimental
+             */
+            toArray(options?: { signal: AbortSignal }): Promise<any>;
             _destroy(error: Error | null, callback: (error?: Error | null) => void): void;
             /**
              * Destroy the stream. Optionally emit an `'error'` event, and emit a `'close'`event (unless `emitClose` is set to `false`). After this call, the readable
