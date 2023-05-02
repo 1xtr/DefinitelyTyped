@@ -42,6 +42,7 @@
 //                 wafuwafu13 <https://github.com/wafuwafu13>
 //                 Matteo Collina <https://github.com/mcollina>
 //                 Dmitry Semigradsky <https://github.com/Semigradsky>
+//                 Aleksei Anisimov <https://github.com/1xtr>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 /**
